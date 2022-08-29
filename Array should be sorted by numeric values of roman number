@@ -1,0 +1,13 @@
+words = ["William V", "William I","William III","Adam II","Brain IV","Adam IV"]
+words = sorted(words)
+romanNo = {
+    "I" : 1,
+    "II": 2,
+    "III": 3,
+    "IV": 4,
+    "V" : 5,
+    "VI": 6,
+}
+words = (sorted(words,key=lambda x:romanNo[x.split(" ")[1]]))
+for i in words:
+    print(i)
